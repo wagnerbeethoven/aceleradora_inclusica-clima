@@ -13,25 +13,17 @@ const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
  * @returns {Promise<Object>} - Dados do clima
  */
 async function getWeather(city, units = 'metric') {
-  // Monta a URL com a chave da API, nome da cidade e unidades
   const url = `${BASE_URL}?q=${city}&units=${units}&appid=${API_KEY}`;
 
   try {
-    // Fazendo a requisição para a API
     const response = await fetch(url);
-
-    // Verifica se a resposta foi bem-sucedida
     if (!response.ok) {
       throw new Error('Erro ao buscar dados do clima');
     }
 
-    // Converte a resposta para JSON
     const data = await response.json();
-
-    // Retorna os dados do clima
     return data;
   } catch (error) {
-    // Em caso de erro, exibe a mensagem
     console.error('Erro:', error);
     return null;
   }
@@ -46,13 +38,17 @@ function displayWeather(data) {
     const temp = data.main.temp;
     const humidity = data.main.humidity;
     const weather = data.weather[0].description;
+    const icon = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; // URL do ícone
 
-    // Exibir os resultados na página
+    // Criação do conteúdo HTML para exibir as informações
     document.getElementById('weather').innerHTML = `
-      <h3>Clima de Porto Alegre</h3>
-      <p><strong>Temperatura:</strong> ${temp}°C</p>
-      <p><strong>Humidade:</strong> ${humidity}%</p>
-      <p><strong>Condição:</strong> ${weather}</p>
+      <h2>Clima em ${data.name}</h2>
+      <img src="${icon}" alt="Ícone do clima">
+      <div class="weather-item">
+        <p><strong>Temperatura:</strong> ${temp}°C</p>
+        <p><strong>Humidade:</strong> ${humidity}%</p>
+        <p><strong>Condição:</strong> ${weather}</p>
+      </div>
     `;
   } else {
     document.getElementById('weather').innerHTML = '<p>Dados de clima não encontrados.</p>';

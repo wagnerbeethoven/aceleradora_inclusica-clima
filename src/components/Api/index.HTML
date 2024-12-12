@@ -39,6 +39,13 @@
     #btn:hover {
       background-color: #45a049;
     }
+    .weather-item {
+      margin-top: 10px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
   </style>
 </head>
 <body>
@@ -50,11 +57,11 @@
     <p>Dados de clima aparecerão aqui quando você clicar no botão.</p>
   </div>
 
+  <!-- Inclusão do arquivo JavaScript -->
   <script src="api.js"></script>
   <script>
     // Quando o botão for clicado, executa a busca pelo clima
     document.getElementById('btn').addEventListener('click', () => {
-      // Exibe uma mensagem de carregamento
       document.getElementById('weather').innerHTML = '<p>Carregando dados do clima...</p>';
 
       getWeather('Porto Alegre')
