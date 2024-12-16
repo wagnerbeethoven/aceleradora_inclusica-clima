@@ -1,0 +1,19 @@
+public/
+  index.html
+
+src/
+  components/
+    Api/
+      api.js
+    Header/
+      Header.js
+      Header.css
+    WeatherCard/
+      WeatherCard.jsx
+      WeatherCard.css
+  App.css
+  App.js
+  index.js
+  .gitignore
+  package.json
+  README.md
