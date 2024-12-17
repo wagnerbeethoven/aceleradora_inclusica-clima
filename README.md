@@ -12,6 +12,10 @@ Esse projeto foi desenvolvido pela turma acelerado inclusiva com intuidto de cri
 
 **Guia de Instalação**
 
+1º Rodar o comando yarn para instalar as dependência.
+
+2º Rodar o comando yarn start para iniciar a aplicação
+
 **Funcionalidades Principais**
 
 **Referencias**

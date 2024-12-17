@@ -1,4 +1,4 @@
-export function Header () {
+export const Header = () => {
     return(
         <header className="">
         
