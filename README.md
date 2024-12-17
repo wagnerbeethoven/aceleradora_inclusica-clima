@@ -1,4 +1,4 @@
-**Documentação do projeto Clima Inclusivo**
+# Documentação do projeto Clima Inclusivo
 
 **Apresentação do projeto**
 
@@ -7,14 +7,14 @@ Esse projeto foi desenvolvido pela turma acelerado inclusiva com intuidto de cri
 **Objetivo**
 
 **Ferramentas Utilizadas**
+- visual code
 
 **Estrutura do projeto**
 
 **Guia de Instalação**
 
-1º Rodar o comando yarn para instalar as dependência.
-
-2º Rodar o comando yarn start para iniciar a aplicação
+1. comando `yarn` para instalar as dependência.
+2. comando `yarn start` para iniciar a aplicação
 
 **Funcionalidades Principais**
 
