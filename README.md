@@ -1,17 +1,17 @@
 # Documentação do projeto Clima Inclusivo
 
-**Apresentação do projeto**
+## Apresentação do projeto
 
 Esse projeto foi desenvolvido pela turma acelerado inclusiva com intuidto de criar aplicação Web que forneçe insformações climaticas acessiveis e uteis, considerando as necessidades dos usuarios afetados, por eventos climaticos e extremos como enchentes, aplicação foi desenvolvido por React e boas práticas
 
-**Objetivo**
+## Objetivo
 
 **Ferramentas Utilizadas**
 - visual code
 
 **Estrutura do projeto**
 
-**Guia de Instalação**
+## Guia de Instalação
 
 1. comando `yarn` para instalar as dependência.
 2. comando `yarn start` para iniciar a aplicação
