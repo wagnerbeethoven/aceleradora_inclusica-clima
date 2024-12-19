@@ -27,19 +27,22 @@ O projeto segue uma estrutura organizada para facilitar a manutenção e escalab
 Para instalar e executar o projeto, siga os passos abaixo:
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/wagnerbeethoven/aceleradora_inclusica-clima.git
-   ```
+   
+```bash
+git clone https://github.com/wagnerbeethoven/aceleradora_inclusica-clima.git
+```
 
 2. Instale as dependências:
-   ```bash
-   yarn
-   ```
+   
+```bash
+yarn
+```
 
 3. Inicie a aplicação:
-   ```bash
-   yarn start
-   ```
+   
+```bash
+yarn start
+```
 
 ## Funcionalidades Principais
 - Exibição de informações climáticas em tempo real.
